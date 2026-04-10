@@ -36,6 +36,25 @@ jupyter lab notebook/DataExploration.ipynb
 - `lbs_collected`: Pounds of food waste collected
 - `compost_created_lbs`: Estimated compost produced (~10:1 ratio)
 
+**Town of Cary Food Waste Recycling Participation API**
+- Base URL: `https://data.townofcary.org/api/explore/v2.1/catalog/datasets/food-waste-recycling-participation`
+- Endpoints: `/records` (100 record limit), `/exports/json` (full dataset)
+- Update frequency: Monthly
+- No authentication required
+
+**Data fields:**
+- `date`: Date of record (YYYY-MM-DD)
+- `counts`: Estimated number of drop-offs to the Citizen's Convenience Center per day containing food waste as recorded by staff members on site.
+
+
+**Local Government Annual Reports (LGAR)**
+- Source: NC DEQ annual solid waste reports for Town of Cary
+- Location: `data/raw/pdfs/CARY LGAR FY XX-XX.pdf`
+- Extracted via GreenPT API using PyPDF2
+- Programs: Municipal Solid Waste, Recycling, Yard Waste
+- Key fields: `Year`, `Program`, `Tons Collected`, `Collection Cost`, `Disposal Cost`, `Total Cost`, `Households/Customers Served`
+- Derived metrics: `Collection Cost per Ton`, `Disposal Cost per Ton`
+
 ## Architecture
 
 **Current Phase (Data Analysis):**
