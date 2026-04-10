@@ -1,3 +1,6 @@
 braindump.md
 venv/
-data/
+*.csv
+*.json
+.env
+**/*.ipynb_checkpoints/
