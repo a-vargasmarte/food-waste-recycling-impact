@@ -79,5 +79,26 @@ The final product uses a "martini glass" narrative structure:
 - **Stem**: Author-driven scrollytelling with sticky chart that transitions between views
 - **Glass**: Reader-driven exploration with filters for date range, location, and metrics
 
+## Exploratory Charts (DataExploration.ipynb)
+
+**Distribution & Comparison:**
+- Histograms: lbs_collected distribution (overall, by year, fiscal year, season)
+- Box plots: lbs_collected by year and stop_name, outlier detection with IQR bounds
+- Bar plots: lbs_collected by year, tons by fiscal year
+
+**Time Series (Food Waste API):**
+- Line plots: daily lbs_collected (overall and by stop_name)
+- Monthly tons collected and month-over-month difference
+- Daily and yearly tons difference
+
+**LGAR Program Analysis:**
+- Grouped bar/line plots by program: Tons Collected, Collection Cost, Disposal Cost
+- Cost per ton metrics: Collection Cost per Ton, Disposal Cost per Ton
+- Year-over-year difference: Cost per Ton Difference by program
+
+**Combined Analysis:**
+- Tons Collected vs Food Waste Tons Collected (dual y-axis)
+- Food Waste Tons Difference over fiscal years
+
 ## Development Best Practices
 - Use comments sparingly. Only comment complex code.
